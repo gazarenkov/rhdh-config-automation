@@ -58,7 +58,7 @@ jobs:
 
               # replace local dynamic-plugins.default.yaml file with latest from the index container image, and add a deprecation warning
               echo -e "\
-              # THIS FILE IS DEPRECATED. CONTENTS ARE GENERATED - DO NOT EDIT!\n\
+              # CONTENTS ARE GENERATED - DO NOT EDIT!\n\
               #\n\
               # File dynamic-plugins.default.yaml is now generated from default.package.yaml (in this repo)\n\
               # and default configuration located in the overlays repo under workspaces/*/metadata/*.yaml\n\
