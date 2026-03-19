@@ -67,8 +67,8 @@ jobs:
               # To fetch + unpack the latest index image see \n\
               # https://github.com/redhat-developer/rhdh/blob/main/.github/workflows/update-dynamic-plugins-default.yaml#L44-L75
               " > dynamic-plugins.default.yaml
-              cat "$DIR"/dynamic-plugins.default.yaml >> dynamic-plugins.default.yaml
-              cat "$DIR"/index.json >> index.json
+              cat "$DIR"/dynamic-plugins.default.yaml > dynamic-plugins.default.yaml
+              cat "$DIR"/index.json > index.json
             }
             TAG=$(jq -r '.version' package.json) # 1.9.0
             unpack "plugin-catalog-index:${TAG}"
@@ -87,7 +87,7 @@ jobs:
           with:
             token: ${{ steps.generate-token.outputs.token }}
             commit-message: |
-              chore: update dynamic-plugins.default.yaml from quay.io/rhdh/plugin-catalog-index:${{ env.TAG }}
+              chore: update dynamic-plugins default config from quay.io/rhdh/plugin-catalog-index:${{ env.TAG }}
             branch: chore/automated-update-dpdy-${{ github.ref_name }}-${{ env.TAG }}
             title: "chore: [${{ github.ref_name }}] update dynamic-plugins.default.yaml from quay.io/rhdh/plugin-catalog-index:${{ env.TAG }}"
             body: |
