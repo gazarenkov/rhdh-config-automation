@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Update dynamic-plugins.default.yaml
+name: Update dynamic-plugins-default-config
 
 on:
   # workflow_dispatch so that it can be triggered manually if needed
@@ -39,7 +39,7 @@ jobs:
           with:
             fetch-depth: 0
 
-        - name: Update dynamic-plugins.default.yaml from latest quay.io/rhdh/plugin-catalog-index:1.y container
+        - name: Update dynamic-plugins default config from latest quay.io/rhdh/plugin-catalog-index:1.y container
           run: |
             unpack () {
               local IMAGE="$1"
