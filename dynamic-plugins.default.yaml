@@ -1,12 +1,3 @@
-  # CONTENTS ARE GENERATED - DO NOT EDIT!
-  #
-  # File dynamic-plugins.default.yaml is now generated from default.package.yaml (in this repo)
-  # and default configuration located in the overlays repo under workspaces/*/metadata/*.yaml
-  # See https://github.com/redhat-developer/rhdh-plugin-export-overlays/
-  #
-  # To fetch + unpack the latest index image see 
-  # https://github.com/redhat-developer/rhdh/blob/main/.github/workflows/update-dynamic-plugins-default.yaml#L44-L75
-  
 plugins:
   # - package: oci://registry.access.redhat.com/rhdh/backstage-community-plugin-analytics-provider-segment@sha256:d465b0f4f85af8a0767a84055c366cebc11c8c1f6a8488248874e3acc7f148ee
   # Tag: 1.10.0--1.22.2, Build date: 2026-01-29T16:35:53Z
